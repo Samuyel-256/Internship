@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eed3b1;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: left;
+    margin: 10px;
+    color: #1f4529;
+    font-size: 30px;
+}
+
+h2 {
+    color: #1f4529;
+    text-align: center;
+    margin-top: 10%;
+}
+
+h3 {
+    color: #1f4529;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+p {
+    color: #47663b;
+    line-height: 1.5;
+    margin: 0 auto;
+    width: 60%;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+}
+
+/* Interactive Button Styling */
+button {
+    display: block;
+    margin: 20px auto;
+    margin-top: -100px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #1f4529;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #2a6938;
+    transform: scale(1.05);
+}
+
+/* Button Active (Click) Effect */
+button:active {
+    background-color: #17421e;
+    transform: scale(0.98);
+}
+
+/* Smooth Transition for Background Change */
+body {
+    transition: background-color 0.5s;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
