@@ -1,0 +1,192 @@
+/* Common Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eed3b1;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #1f4529;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+h3 {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+/* Paragraphs */
+p {
+    color: #47663b;
+    line-height: 1.5;
+    margin: 0 auto;
+    width: 60%;
+}
+
+/* Images */
+img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    margin-top: -20px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #1f4529;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    border: none;
+}
+
+button:hover {
+    background-color: #2a6938;
+}
+
+button:active {
+    background-color: #17421e;
+}
+
+/* Fetch Button */
+#fetchBtn {
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#fetchBtn:hover {
+    background-color: #45a049;
+}
+
+/* Posts Container */
+#postContainer {
+    margin-top: 20px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Post Cards */
+.post {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Container */
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin-top: 30px;
+}
+
+/* Form Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1f4529;
+}
+
+/* Form Inputs & Textareas */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #4CAF50;
+}
+
+/* Form Submit Button */
+.form-container button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Error Styling */
+input.error, textarea.error {
+    border-color: red;
+}
+
+small {
+    color: red;
+    font-size: 12px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.95em;
+        width: 80%;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .form-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+        width: 90%;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+}
